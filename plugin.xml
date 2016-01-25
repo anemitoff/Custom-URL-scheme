@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.teamnemitoff.launchmyapp"
-        version="3.2.2">
+        version="3.2.3">
 
   <name>Custom URL scheme</name>
 
@@ -49,6 +49,7 @@
       </feature>
     </config-file>
 
+    <framework src="build-extras.gradle" custom="true" type="gradleReference"/>
     <source-file src="src/android/nl/xservices/plugins/LaunchMyApp.java" target-dir="src/nl/xservices/plugins"/>
 
     <config-file target="AndroidManifest.xml" parent="/*/application/activity">
